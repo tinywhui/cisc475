@@ -1,0 +1,15 @@
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# node && npm
+node_modules
+npm-debug.log
+
+# mac directory
+.DS_Store
