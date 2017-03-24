@@ -1,0 +1,48 @@
+@import '_config';
+
+$topBarHeight: 50px;
+$menuWidth: 25%;
+
+body{
+  padding: 0;
+  margin:0;
+  background-color: $white;
+}
+
+#topBar{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: $topBarHeight;
+  width: 100%;
+  background-color: $blue;
+  z-index: 1;
+}
+
+#menuButton{
+  position: fixed;
+  height: 30px;
+  width: 30px;
+  background-color: $gray;
+  z-index: 2;
+}
+
+#pdfView{
+  position: fixed;
+  margin-top: $topBarHeight;
+  margin-left: $menuWidth;
+  width: 100% - $menuWidth;
+  background-color: $white;
+  transition: margin-left 1s;
+}
+
+#menu{
+  position: fixed;
+  margin-top: $topBarHeight;
+  margin-left: 0;
+  width: $menuWidth;
+  background-color: $smoke;
+  height: 100%;
+  transition: width 1s;
+}
